@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Casa das Baterias ⚡ - Ofertas</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #000000, #1a1a1a, #FFD200);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+
+  header {
+    text-align: center;
+    background: linear-gradient(90deg, #FFD200, #000);
+    color: #000;
+    width: 100%;
+    padding: 20px 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    box-shadow: 0 0 15px #FFD20055;
+  }
+
+  .carousel {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 40px 20px;
+    width: 90%;
+  }
+
+  .carousel::-webkit-scrollbar {
+    height: 8px;
+  }
+  .carousel::-webkit-scrollbar-thumb {
+    background: #FFD200;
+    border-radius: 10px;
+  }
+
+  .card {
+    background: linear-gradient(145deg, #000000, #2c2c2c);
+    border: 2px solid #FFD200;
+    border-radius: 15px;
+    width: 250px;
+    height: 320px;
+    perspective: 1000px;
+    flex-shrink: 0;
+    box-shadow: 0 0 20px #FFD20033;
+    transition: transform 0.3s;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+  }
+
+  .card.flipped .card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  .card-front {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #FFD20033, #000);
+  }
+
+  .card-front img {
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #FFD20066;
+  }
+
+  .card-front h2 {
+    color: #FFD200;
+    margin-top: 10px;
+    font-size: 1.1em;
+  }
+
+  .card-back {
+    background: linear-gradient(160deg, #000, #FFD20055);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    text-align: center;
+    padding: 15px;
+  }
+
+  .card-back p {
+    margin: 6px 0;
+  }
+
+  .parcelado {
+    color: #FFD200;
+    font-weight: bold;
+  }
+
+  .avista {
+    color: #00ff66;
+    font-weight: bold;
+  }
+
+  .obs {
+    color: #aaa;
+    font-size: 0.9em;
+  }
+
+  footer {
+    text-align: center;
+    padding: 15px;
+    color: #FFD200;
+    font-size: 0.9em;
+    background: #000;
+    width: 100%;
+  }
+
+</style>
+</head>
+<body>
+
+<header>⚡ Ofertas Interativas - Casa das Baterias ⚡</header>
+
+<div class="carousel">
+  <!-- Card 1 -->
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="img/Screenshot_2025-10-31-09-59-59-946_com.android.chrome-edit.jpg" alt="Bateria Zetta 60Ah">
+        <h2>ZETTA 60Ah</h2>
+        <h1>CLIQUE AQUI</h1>
+                        
+      </div>
+      <div class="card-back">
+        <p class="parcelado">💳 R$ 450,00 em até 10x sem juros</p>
+        <p class="avista">💵 R$ 400,00 à vista</p>
+        <p class="obs">*Com devolução da sucata (bateria velha)</p>
+                                <p class="obs">*18 meses de Garantia</p>
+                                    
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="img/Screenshot_2025-10-31-10-21-21-039_com.android.chrome-edit.jpg" alt="Bateria Moura 60Ah">
+        <h2>MOURA 60Ah</h2>
+        <h1>CLIQUE AQUI</h1>
+                        
+      </div>
+      <div class="card-back">
+        <p class="parcelado">💳 R$ 550,00 em até 10x sem juros</p>
+        <p class="avista">💵 R$ 500,00 à vista</p>
+        <p class="obs">*Com devolução da sucata (bateria velha)</p>
+                                <p class="obs">*24 meses de Garantia</p>
+                                    
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="img/IMG_20251031_104559.jpg" alt="Bateria Heliar 60Ah">
+        <h2>HAYOLITE 150Ah</h2>
+        <h1>CLIQUE AQUI</h1>
+                        
+      </div>
+      <div class="card-back">
+        <p class="parcelado">💳 R$ 1000,00 em até 10x sem juros</p>
+        <p class="avista">💵 R$ 900,00 à vista</p>
+        <p class="obs">*Com devolução da sucata (bateria velha)</p>
+                    <p class="obs">*15 meses de Garantia</p>
+                        
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 4 -->
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="img/Screenshot_2025-10-31-10-49-17-616_com.android.chrome-edit.jpg" alt="Bateria Onbat 60Ah">
+        <h2>ONBAT 60Ah</h2>
+        <h1>CLIQUE AQUI</h1>
+                        
+      </div>
+      <div class="card-back">
+        <p class="parcelado">💳 R$ 380,00 em até 10x sem juros</p>
+        <p class="avista">💵 R$ 300,00 à vista</p>
+        <p class="obs">*Com devolução da sucata (bateria velha)</p>
+                                <p class="obs">*12 meses de Garantia</p>
+                                    
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>© 2025 Casa das Baterias — Energia que move você ⚡</footer>
+
+<script>
+  // Efeito de flip ao clicar nos cards
+  document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('click', () => {
+      card.classList.toggle('flipped');
+    });
+  });
+</script>
+
+</body>
+</html>
